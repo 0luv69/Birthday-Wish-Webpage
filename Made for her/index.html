@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/webp" href="images/heart.webp">
+    <meta property="og:image" content="images/heart.webp">
+    <title>For Her: ❤️❤️</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css" media="(max-width: 600px)">
+    <style>
+        #dev_name{
+            font-family: Georgia, Times New Roman, serif;
+     font-size: 12px;
+            color:red;
+            text-decoration: none;
+            padding: 5px;
+            font-size:30px;
+        }
+    </style>
+</head>
+
+<body>
+        <a href="second_page/index.html" id='dev_name'>
+        Developed By Luv For You</a>
+    <!-- seventh -->
+    <div class="paper heart" >
+        <img id="heartt" src="images/heart.webp" alt="Heart Emoji here" draggable="false">
+        <p id="L1">Happy birthday</p>
+    </div>
+    
+<!-- sixth -->
+    <div class="paper smile">
+        <div class="img4"> 
+            <span id="textjj"> Always smile
+            </span>
+        </div> 
+    </div>    
+    
+    <!-- fifth -->
+    <div class="paper pic2" >
+        <div id="white">
+            <span id="top-side">BE one of the best<span id="sai__word"> Person </span>In ur Life</span>
+            <span id="left-side" >CooL</span>
+            <span id="right-side">Pose</span>
+            <div id="pic02"></div>
+        </div>
+    </div>
+   
+    <!-- fourth -->
+    <div  class="paper queot1" >
+        <p id="Queot1">TAKE A CHANCE,
+            <br>TAKE A RISK, 
+            <br>LIVE LIFE TO THE 
+            <br>FULLEST THIS COMING YEAR
+        </p>
+    </div>
+
+    <!-- third -->
+    <div class="paper pic1" >
+        <div id="pic01"></div>
+        <span id="mew">The Quuen is Here</span>
+    </div>
+
+    <!-- second -->
+    <div class="paper queot2">
+        <span id="hheart">❤️</span>
+        <span id="hheart2">❤️</span>
+
+        <p id="Queot2">
+            Be clear in <span id="true__self">heart</span> and your <span id="true__self">mind</span> so that you can recognise the <span id="true__self">true self</span>.
+        </p>
+    </div>
+
+    <!-- first -->
+    <div id="drag" class="paper" >
+        <p id="L7">Drag the paper to view more</p>
+    </div>
+
+<!-- page 1 --><script>
+    if (!sessionStorage.getItem("pagenum")) {
+    // Store the 0 in session storage so first page will be loADed
+      sessionStorage.setItem("pagenum", 0);
+      console.log("Added the random number in c00kies",0)
+    }
+
+    var storedNumber = sessionStorage.getItem("pagenum");
+    console.log("Got --",storedNumber,"-- form stored cookies")
+
+    if (storedNumber==="0"){
+        sessionStorage.setItem("pagenum", 1);
+        console.log("Changed the vlaue from 0 to 1")
+
+    }
+
+    else{
+        sessionStorage.setItem("pagenum", 0);
+        console.log("Changed the vlaue from 1 to 0")
+        window.location.href = 'second_page/index.html';
+    }
+    </script>
+    
+    <script>
+        
+
+        // Function to load the appropriate script based on the device size
+        function loadScript() {
+          if (window.innerWidth <= 600) {
+            // Load mobile version of the JavaScript code
+            var script = document.createElement('script');
+            script.src = 'mobile.js';
+            document.head.appendChild(script);
+          } else {
+            // Load desktop version of the JavaScript code
+            var script = document.createElement('script');
+            script.src = 'script.js';
+            document.head.appendChild(script);
+          }
+        }
+    
+        // Call the loadScript function when the page finishes loading
+        window.onload = loadScript;
+      </script> 
+  <script>
+    var message = 'He said, "Hello!';
+    console.log(message);
+  </script>
+</body>
+</html>
+
+

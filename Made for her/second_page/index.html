@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>For Her: ❤️❤️❤️❤️</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <div id="hand_father" class="hide">
+  <img id="handd" src="../images/hands.png">
+  <span id="hand_Word">Move the Picture</span>
+  </div>
+
+  
+<div id="drag-container">
+  <div id="spin-container">
+    <img src="../images/1.jpg" alt="">
+    <img src="../images/2.jpg" alt="">
+    <img src="../images/heart.webp" alt="">
+    <img src="../images/3.jpg" alt="">
+    <img src="../images/4.jpg" alt="">
+    <img src="../images/heart.webp" alt="">
+
+
+  <!-- Text at center of ground -->
+  
+    <p>Happy Birthday Love ❤️❤️</p>
+  </div>
+  <div id="ground"></div>
+</div>
+
+<a href="./index.html" id="Button_next_page">Next page</a>
+
+<script  src="./script.js"></script>
+  
+<script>
+if (!sessionStorage.getItem("pagenum")){
+    // adding the number if cookies not abviliable
+    sessionStorage.setItem("pagenum",1);
+    console.log("Added the random number in c00kies",1);
+} 
+
+var storedNumber = sessionStorage.getItem("pagenum");
+console.log("Got --",storedNumber,"-- form stored cookies")
+
+if (storedNumber==="0"){
+    sessionStorage.setItem("pagenum", 1);
+    console.log("Changed the vlaue from 0 to 1")
+}
+else{
+    sessionStorage.setItem("pagenum", 0);
+    console.log("Changed the vlaue from 1 to 0")
+    window.location.href = '../index.html';
+}
+
+</script>
+</body>
+

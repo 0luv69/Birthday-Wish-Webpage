@@ -1,0 +1,178 @@
+.paper{
+    height: 60px;
+    padding: 10px 10px;
+}
+
+p{
+    font-size: 20px;
+}
+
+
+/* first  */
+.small01{ /* text small caller */ 
+    animation: text-small 4s forwards;
+}
+        /* Text animation */
+@keyframes text-small {
+    from{
+        padding: -50px 35px;
+        font-size: 16px;
+    
+    }
+    to{ padding: -15px 20px;
+        font-size: 6px;
+        display: none;
+    }
+}
+
+.fireanimations01{
+    font-size: 2px;
+    animation: fire 5s forwards;
+}
+
+@keyframes fire{
+    /* 0=680 */
+    from{width: 180px;
+    height: 35px;}
+    
+    to{ 
+        opacity: 0;
+        width: 30px;
+        height: 20px;
+}
+  }
+
+
+/* second page  */
+.queot2{
+    height: 150px;
+    width: 220px;
+}
+
+#hheart{
+    font-size: 25px;
+    margin: 5px 90px;
+
+}
+
+#hheart2{
+    font-size: 25px;
+    margin: 5px 110px;
+
+}
+
+#Queot2{
+    /* padding: 0px -20px; */
+    font-size: 20px;
+    width: 200px;
+    margin: 40px 12px;
+
+}
+
+/* third */
+.pic1{
+    height: 200px;
+    width: 170px;
+}
+#pic01{
+    margin: 0px 8.5px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-position: bottom; */
+    width: 150px;
+    height: 160px;
+    transform: rotateZ('80deg');
+}
+
+#mew{
+    margin: 2px 0px;
+    font-size: 27px;
+}
+
+
+/* fourth */
+.queot1{
+    height: 160px;
+    width: 200px;  
+    transform: rotateZ('2deg');
+}
+
+#Queot1{
+    font-size: 15px;
+    margin: 80px 18px;
+    width: 200px;
+}
+#Queot1:hover{
+    font-size: 25px;
+    margin: -10px 7px;
+    font-weight:900;
+}
+
+/* fifth  */
+
+.pic2{
+    height: 220px;
+    width: 260px;
+}
+#white{
+    margin: 0px 4.5px;
+    width: 250px;
+    height: 220px;
+}
+#top-side{
+    font-size: 13px;
+    margin: 5px 10px;
+}
+#left-side{
+    margin:  50px 0px;
+    font-size: 20px;
+}
+#right-side{
+    margin: 53px 224px;
+    font-size: 20px;
+}
+#pic02{
+    margin: 40px 29px;
+    width: 190px;
+    height: 160px;
+}
+
+
+/* sixth */
+
+.smile{
+    height: 150px;
+    width: 200px;
+}
+
+.img4{
+
+    height: 150px;
+    width: 195px;
+    margin: -5px -2px;
+
+}
+#textjj{
+    font-size: 20px;
+    margin: 100px 30px;
+    width: 140px;
+
+}
+
+/* seventh */
+.heart{
+    height: 130px;
+    width:110px;
+}
+
+
+#heartt{
+    margin: 0px 73px;
+    height: 60px;
+    width: 60px;
+}
+
+#L1{
+    font-size: 33px;
+    margin: -40px 10px;
+}
